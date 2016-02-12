@@ -2,4 +2,27 @@
 
 'use strict'
 
-console.log('Hello');
+var c = require('skilstak-colors')
+
+var printYellow = function (message) {
+  console.log(c.clear + c.yellow + message + c.reset);
+}
+
+var printMulti = function (message) {                                                                                                                                                           
+  console.log(c.clear + c.multi(message) + c.reset);                                                                                                                                           
+}     
+
+var printMultif = function (message) { 
+  while (true) {
+    console.log(c.multi(message));                                                                                                                                           
+  }
+}
+
+var printGreen = function (message) {                                                                                                                                                           
+  console.log(c.clear + c.green + message + c.reset);                                                                                                                                           
+}     
+
+printYellow("Hi")
+printGreen('My name is ')
+printMulti('FLOWEY!!')
+printMultif("HAHAHAHAHA")

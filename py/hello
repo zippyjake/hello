@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+def print_plain():
+    """HELLO """
+    print(c.base01 + "hello")
+
+def print_multi():
+    """HELLO """
+    while True:
+        print(c.multi("hello"))
+
+def print_Multi():
+    """HELLO """
+    print(c.multi("hello"))
+
+if __name__ == '__main__':
+    print_plain()
+    print_Multi()
+    print_multi()
